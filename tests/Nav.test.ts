@@ -1,3 +1,5 @@
+import * as  config from "../config";
+
 describe("Nav Bar", () => {
   beforeEach(() => {
     return page.goto(`chrome-extension://${config.exId}/index.html`);

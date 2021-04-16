@@ -20,6 +20,7 @@ module.exports = {
         rules: {
           "typescript/no-var-requires": "off",
           "typescript/no-empty-function": "off",
+          "@typescript-eslint/explicit-module-boundary-types": ["error"]
         },
       },
     ],
