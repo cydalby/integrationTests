@@ -1,7 +1,5 @@
 const { teardown: teardownPuppeteer } = require("jest-environment-puppeteer");
 
-const globalTeardown = (): void => {
-  return teardownPuppeteer();
-};
+const globalTeardown = (): void => teardownPuppeteer();
 
 export default globalTeardown;
