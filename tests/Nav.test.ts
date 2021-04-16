@@ -1,5 +1,3 @@
-const config = require("../config");
-
 describe("Nav Bar", () => {
   beforeEach(() => {
     return page.goto(`chrome-extension://${config.exId}/index.html`);
