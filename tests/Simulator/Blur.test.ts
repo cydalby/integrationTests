@@ -1,13 +1,13 @@
-import * as config from "../config";
+import * as config from "../../config";
 
-describe("Simulator", () => {
+describe("Blur Simulator", () => {
   beforeEach(async () => {
     await page.goto(`chrome-extension://${config.exId}/index.html`);
     await page.click("#Simulator");
 
-    const blurBtn = await page.$x('//button[text()="Blur"]');
+    const [blurBtn] = await page.$x('//button[text()="Blur"]');
 
-    await blurBtn[0].click();
+    await blurBtn.click();
   });
 
   it("Blur Component has default value of 2", async () => {

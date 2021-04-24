@@ -6,6 +6,7 @@ module.exports = {
   launch: {
     headless: false,
     args: [
+      '--no-sandbox',
       `--disable-extensions-except=${pathToExtension}`,
       `--load-extension=${pathToExtension}`,
     ],
