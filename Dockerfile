@@ -24,5 +24,5 @@ RUN yarn install
 EXPOSE 9001
 ENV DISPLAY :99
 
-ENTRYPOINT Xvfb :99 -screen 0 1024x768x16 & yarn test
+CMD Xvfb :99 -screen 0 1024x768x16 & yarn test
 
